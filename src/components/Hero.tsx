@@ -10,26 +10,27 @@ export function Hero() {
   const scale = useTransform(scrollYProgress, [0, 1], [1, 1.15]);
 
   return (
-    <section ref={ref} id="top" className="relative min-h-[100svh] flex items-center pt-28 pb-20 overflow-hidden">
+    <section ref={ref} id="top" className="relative min-h-[100svh] flex items-center pt-28 pb-16 sm:pb-20 overflow-hidden">
       <div className="absolute inset-0 -z-10">
         <motion.div style={{ y, scale }} className="absolute inset-0">
           <img src={heroImg} alt="Premium modular interior" className="w-full h-[120%] object-cover" />
         </motion.div>
-        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/30 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-background/85 via-background/65 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/40 to-transparent" />
       </div>
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 w-full grid lg:grid-cols-12 gap-10 items-center">
         <div className="lg:col-span-7">
           <motion.span
             initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}
-            className="inline-flex items-center gap-2 glass rounded-full px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-foreground/80"
+            className="inline-flex items-center gap-2 glass-strong rounded-full px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-foreground"
           >
             <Sparkles className="h-3.5 w-3.5 text-accent" /> Bengaluru · Since 2013
           </motion.span>
 
           <motion.h1
             initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.8 }}
-            className="mt-6 text-5xl sm:text-6xl lg:text-7xl font-semibold leading-[1.05]"
+            className="mt-6 text-4xl sm:text-6xl lg:text-7xl font-semibold leading-[1.05] text-foreground"
           >
             Design that <br className="hidden sm:block" />
             <span className="font-serif italic font-light text-gradient">speaks volumes.</span>
@@ -37,7 +38,7 @@ export function Hero() {
 
           <motion.p
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.45, duration: 0.7 }}
-            className="mt-6 max-w-xl text-base sm:text-lg text-muted-foreground"
+            className="mt-6 max-w-xl text-base sm:text-lg text-foreground/80"
           >
             Modular kitchens, wardrobes & turnkey interiors—engineered in our factory, finished in your home. Crafted for families who value the details.
           </motion.p>

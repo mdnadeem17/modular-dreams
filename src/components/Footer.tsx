@@ -29,9 +29,9 @@ export function Footer() {
         <div>
           <h4 className="font-display font-semibold text-sm uppercase tracking-widest">Get in touch</h4>
           <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
-            <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5 text-accent" /> Indiranagar, Bengaluru 560038</li>
-            <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-accent" /> +91 99999 99999</li>
-            <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-accent" /> hello@modularinteriors.in</li>
+            <li className="flex items-start gap-2"><MapPin className="h-4 w-4 mt-0.5 text-accent" /><span>Indiranagar, Bengaluru 560038</span></li>
+            <li className="flex items-center gap-2"><Phone className="h-4 w-4 text-accent" /><span>+91 99999 99999</span></li>
+            <li className="flex items-center gap-2"><Mail className="h-4 w-4 text-accent" /><span>hello@modularinteriors.in</span></li>
           </ul>
         </div>
 
