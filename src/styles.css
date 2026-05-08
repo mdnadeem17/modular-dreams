@@ -89,7 +89,7 @@
 
   --gradient-hero: linear-gradient(135deg, oklch(0.48 0.07 125 / 0.85), oklch(0.62 0.09 60 / 0.7));
   --gradient-cta: linear-gradient(120deg, oklch(0.32 0.05 125), oklch(0.48 0.07 125) 50%, oklch(0.62 0.09 60));
-  --gradient-text: linear-gradient(120deg, oklch(0.48 0.07 125), oklch(0.62 0.09 60));
+  --gradient-text: linear-gradient(120deg, oklch(0.38 0.08 125), oklch(0.5 0.12 55));
   --shadow-luxe: 0 30px 80px -20px oklch(0.2 0.05 120 / 0.25);
   --shadow-glow: 0 0 60px oklch(0.62 0.09 60 / 0.35);
 }
