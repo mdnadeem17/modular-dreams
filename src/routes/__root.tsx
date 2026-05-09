@@ -72,18 +72,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "moduler interor" },
-      { name: "description", content: "Modular Interiors offers premium modular kitchens, wardrobes, and turnkey home design in Bengaluru." },
+      { title: "Lovable App" },
+      { name: "description", content: "Lovable Generated Project" },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "moduler interor" },
-      { property: "og:description", content: "Modular Interiors offers premium modular kitchens, wardrobes, and turnkey home design in Bengaluru." },
+      { property: "og:title", content: "Lovable App" },
+      { property: "og:description", content: "Lovable Generated Project" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
-      { name: "twitter:title", content: "moduler interor" },
-      { name: "twitter:description", content: "Modular Interiors offers premium modular kitchens, wardrobes, and turnkey home design in Bengaluru." },
-      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/397a14c2-fef1-4e29-8108-62c5e34450e0/id-preview-c4ba5f0a--13b65d3c-8bf0-44f6-a980-9ef51ed454a7.lovable.app-1778256229622.png" },
-      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/397a14c2-fef1-4e29-8108-62c5e34450e0/id-preview-c4ba5f0a--13b65d3c-8bf0-44f6-a980-9ef51ed454a7.lovable.app-1778256229622.png" },
     ],
     links: [
       {

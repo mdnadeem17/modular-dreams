@@ -1,3 +1,4 @@
+import React from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
@@ -25,6 +26,15 @@ export const Route = createFileRoute("/")({
 });
 
 function Index() {
+  React.useEffect(() => {
+    // Force scroll to top on mount/refresh
+    window.scrollTo(0, 0);
+    // Remove hash if it exists to prevent browser jumping
+    if (window.location.hash) {
+      window.history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+  }, []);
+
   return (
     <div className="relative min-h-screen">
       <AmbientOrbs />
